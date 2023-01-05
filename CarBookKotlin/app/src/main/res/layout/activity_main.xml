@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeView"
+        android:layout_width="387dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="86dp"
+        android:text="Welcome to      Car Book"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0022FF"
+        android:textIsSelectable="false"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/showBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="187dp"
+        android:background="#3F51B5"
+        android:onClick="showcars"
+        android:text="Show Cars"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="17dp"
+        android:text="That book has only German cars info"
+        android:textColor="#888888"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

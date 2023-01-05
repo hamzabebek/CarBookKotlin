@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CarBookKotlin</string>
+    <string name="baslik">carlist.name</string>
+    <string name="aciklama">carlist.info</string>
+</resources>
